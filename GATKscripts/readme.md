@@ -1,5 +1,4 @@
-### The script below is utilized to convert individual samples into gVCF files using the clara-parabricks:4.2.1-1 package. The version used in this manuscript is 4.2.0-1 with default parameters.
-
+### The script below is used to convert reads from individual accessions into gVCF files using the clara-parabricks:4.2.1-1 package. The version used in this manuscript is 4.2.0-1 with default parameters.
 ```
 #!/bin/bash
  
