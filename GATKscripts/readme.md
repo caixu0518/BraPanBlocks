@@ -1,3 +1,5 @@
+### The script below is utilized to convert individual samples into gVCF files using the clara-parabricks:4.2.1-1 package. The version used in this manuscript is 4.2.0-1 with default parameters.
+
 ```
 #!/bin/bash
  
@@ -12,13 +14,13 @@ rigth=${readId}"_2.fq.ft.gz"
 if [ -e ${left} ]; then
    echo "${left} exists "
 else
-  sshpass -p Admin1111 scp -P 9222  -r  TNAS@10.122.68.71:/Volume1/backup/00.WangLabData/all_Bra_resequencingData/oib_393/${left}  .   
+  sshpass -p xxxxxx scp -P 9222  -r  TNAS@10.122.68.71:/Volume1/backup/00.WangLabData/all_Bra_resequencingData/oib_393/${left}  .   
 fi
 
 if [ -e ${rigth} ]; then
    echo "${rigth} exists "
 else
-  sshpass -p Admin1111 scp -P 9222 -r TNAS@10.122.68.71:/Volume1/backup/00.WangLabData/all_Bra_resequencingData/oib_393/${rigth}  . 
+  sshpass -p xxxxxx scp -P 9222 -r TNAS@10.122.68.71:/Volume1/backup/00.WangLabData/all_Bra_resequencingData/oib_393/${rigth}  . 
 fi
 
 ##- 
