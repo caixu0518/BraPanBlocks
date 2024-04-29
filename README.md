@@ -1,2 +1,3 @@
 # BraPanBlocks
-here xxxxxxx
+
+The current directory contains scripts corresponding to the analysis pipelines used in the Brassica rapa Pan-Blocks manuscript. This includes scripts for constructing the _B. rapa_ Pan-Blocks (stored in the ConstructPanBlocks directory), domestication signal identification pipeline (stored in the SignalIdentification directory), population analysis workflows (stored in the PopulationStructureAnalysis directory), and variant detection scripts (stored in the GATKscripts directory). Most of the scripts are written in Perl and incorporate calls to previously published software. These details will be referenced in our forthcoming manuscript.
