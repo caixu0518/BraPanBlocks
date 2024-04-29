@@ -6,20 +6,20 @@ The current directory contains scripts corresponding to the analysis pipelines u
 ## ConstructPanBlocks
 The Pan-Blocks constructed in the current study are based on 21 published _B. rapa_ assemblies. To construct the _B. rapa_ Pan-Blocks, we used each genome as a reference genome and aligned the remaining genomes to it (the order used in the current study is CFv4, Z1v2, ECD04, A03, PCE, LongYou, OIB, TUE, BRO, CXB, CXA, PCB, PCA, PCD, PCC, TUB, MIZ, TUA, TCA, CCB). Those syntenic blocks present in the reference genome were extracted as part of the Pan-Blocks. Specifically, we first used the CFv4 genome as a reference and aligned the sequences of other genomes to CFv4 using the nucmer (version: 4.0.0beta2, -t 20 --mum). Next, we utilized delta-filter (parameters: -l 10000 -r -q) to extract "one-to-one alignments" on the same chromosome (defined as syntenic blocks in the current study). Following this, potential inversions were extracted from these one-to-one alignments based on the alignment coordinates between any two genomes. Finally, we used show-coords (parameters: -TrHcl) to identify and merge all syntenic blocks present on the reference genome. These syntenic blocks were then added to the Pan-Blocks, and the sequences contributed by CFv4 were labeled accordingly. Once the alignment with CFv4 as the reference genome was completed, CFv4 was removed from the list of genomes for comparison. In the second round of alignment, we used Z1v2 as the reference genome. Using the same method, we identified syntenic blocks present in the Z1v2 genome and added them to the _B. rapa_ Pan-Blocks, labeling them as contributed by Z1v2. It's important to note that blocks in Z1v2 that were syntenic with CFv4 were excluded, as these sequences are already present in the _B. rapa_ Pan-Blocks. Continuing in the same manner, we used each of the remaining genomes as references in succession. This iterative process enabled us to complete the construction of the _B. rapa_ Pan-Blocks.
 
-<center>#### example: Display of Pan-Blocks on chromosome A03</center>
-
+           #### example: Display of Pan-Blocks on chromosome A03
 <div align=center>
 <img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/A03_Pan-Blocks.gif">
 </div>
-
 ```
 ```
 ## DomesticationSignals
 After obtaining population variations using seven different _B. rapa_ genomes as reference genomes, we further integrated the Pan-Blocks and genetic variation maps constructed with these reference genomes to identify potential selection signals. The steps were conducted as follows: Initially, we partitioned each Pan-Block into 10 kb bins and computed the enrichment levels of reference alleles and missing alleles within both the derived and control groups. A bin was designated as a potential selected region if all SNPs within the bin showed significant enrichment of both alleles in either the derived or control populations. Specifically, we assessed the frequencies of both alleles in these populations and discarded sites where both dominant and recessive allele frequencies were either greater than 0.9 or less than 0.1. Subsequently, we determined the mean (μdominant, μrecessive) and standard deviation (σdominant, σrecessive) of allele frequencies for each window in these populations. Following this, we performed _Fisher's exact test_ and adjusted the p-values using the Benjamini-Hochberg method. If (μdominant-3σdominant) > (μrecessive+3σrecessive) and Padjusted < 1e-5, the window was further considered as a putative selective signal.
 
 
-#### example: Domestication Signals in Southern and Northern East Asian B. rapa Populations Using Pan-Blocks.
-![image](https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/signal_example.gif)
+          #### example: Domestication Signals in Southern and Northern East Asian B. rapa Populations Using Pan-Blocks.
+<div align=center>
+<img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/signal_example.gif">
+</div>
 ```
 ```
 ## PopulationStructureAnalysis
