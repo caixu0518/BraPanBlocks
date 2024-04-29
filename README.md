@@ -9,7 +9,7 @@ The Pan-Blocks constructed in the current study are based on 21 published _B. ra
 #### example: Display of Pan-Blocks on chromosome A03
 
 <div align=center>
-<img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/A03_Pan-Blocks.gif" width="180" height="105">/>
+<img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/A03_Pan-Blocks.gif">
 </div>
 
 ```
