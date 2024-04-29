@@ -1,0 +1,4 @@
+pankmer index -g  ./Agenomefatsta    -o  ABC_index.tar   
+pankmer adj-matrix -i  ABC_index.tar    -o  ABC_adj_matrix.csv
+pankmer clustermap -i  ABC_adj_matrix.csv  -o   ABC_adj_matrix.svg --metric jaccard  --width 12   --height 12 
+pankmer tree --newick --metric jaccard -i  ABC_adj_matrix.csv

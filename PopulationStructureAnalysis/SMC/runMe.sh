@@ -1,0 +1,8 @@
+perl  run_docker_smc.pl  ECD04.snps.maf0.05.fm.vcf.gz  Type1n:ECD04,21SB0522,22SD1618,21SB0568,21SB0531,21SB0611,21SB0550,21SB0545,21SB0536,21SB0526,21SB0578,21SB0555,21SB0530,21SB0513,21SB0524    RURturnipType1n 
+
+#perl run_docker_smc.pl  ECD04.snps.maf0.05.fm.vcf.gz  Type1:ECD04,21SB0522,22SD1618,21SB0568,21SB0531   RURturnipType1
+perl run_docker_smc.pl  ECD04.snps.maf0.05.fm.vcf.gz  Type11:21SB0512,21SB0576,21SB0520,21SB0538,21SB0553  RURturnipType11
+perl run_docker_smc.pl  ECD04.snps.maf0.05.fm.vcf.gz  Type12:21SB0611,21SB0550,21SB0545,21SB0536,21SB0526  RURturnipType12
+perl run_docker_smc.pl  ECD04.snps.maf0.05.fm.vcf.gz  Type13:21SB0578,21SB0555,21SB0530,21SB0513,21SB0524  RURturnipType13
+
+

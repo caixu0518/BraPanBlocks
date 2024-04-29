@@ -1,0 +1,1 @@
+/120t/caix/src/VCF2Dis-1.46/bin/VCF2Dis  -InPut  BraV3.snps.miss0.5.maf0.05.vcf.gz  -OutPut  BraV3.snps.miss0.5.maf0.05.mat

@@ -1,0 +1,49 @@
+##- A01
+perl calculate_shared_haps.v1.pl  A01.chrlen.txt  A01 
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A01"}'    > com.A01.sh 
+sh com.A01.sh
+
+##-A02
+perl calculate_shared_haps.v1.pl  A02.chrlen.txt  A02
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A02"}'    > com.A02.sh
+sh com.A02.sh
+
+##- A03
+perl calculate_shared_haps.v1.pl  A03.chrlen.txt  A03
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A03"}'    > com.A03.sh
+sh com.A03.sh
+
+##- A04
+perl calculate_shared_haps.v1.pl  A04.chrlen.txt  A04
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A04"}'    > com.A04.sh
+sh com.A04.sh
+
+##- A05
+perl calculate_shared_haps.v1.pl  A05.chrlen.txt  A05
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A05"}'    > com.A05.sh
+sh com.A05.sh
+
+##- A06
+perl calculate_shared_haps.v1.pl  A06.chrlen.txt  A06
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A06"}'    > com.A06.sh
+sh com.A06.sh
+
+##- A07
+perl calculate_shared_haps.v1.pl  A07.chrlen.txt  A07
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A07"}'    > com.A07.sh
+sh com.A07.sh
+
+##- A08
+perl calculate_shared_haps.v1.pl  A08.chrlen.txt  A08
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A08"}'    > com.A08.sh
+sh com.A08.sh
+
+##- A09
+perl calculate_shared_haps.v1.pl  A09.chrlen.txt  A09
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A09"}'    > com.A09.sh
+sh com.A09.sh
+
+##- A10
+perl calculate_shared_haps.v1.pl  A10.chrlen.txt  A10
+ls *filtered  |  sed -r 's/\.filtered//' | awk '{print "mv  "$1".filtered  "$1".filtered.A10"}'    > com.A10.sh
+sh com.A10.sh
