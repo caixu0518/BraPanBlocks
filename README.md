@@ -22,6 +22,8 @@ After obtaining population variations using seven different _B. rapa_ genomes as
 <img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/signal_example.gif">
 </div>
 
+```
+```
 ## PopulationStructureAnalysis
 PCA analysis was performed using the plink software (version: v1.90b6.24, https://www.cog-genomics.org/plink2/) with the parameters "plink --noweb --bfile --pca 20 --allow-extra-chr". Fst and nucleotide diversity were calculated using pixy (version: 1.2.7.beta1), with a window size set to 200 kb, step size set to 5 kb, and parameters "pixy --stats pi fst dxy --vcf --populations --bed_file --n_cores 40 --bypass_invariant_check yes". Linkage disequilibrium decay analysis was conducted using PopLDdecay (https://github.com/BGI-shenzhen/PopLDdecay) with default parameters. Population structure analysis was conducted using the fastStructure algorithm. Estimating the size history of populations from whole-genome sequence data in B. rapa was conducted using the SMC++ program using the recommended pipeline (https://github.com/popgenmethods/smcpp). F4-ratio statistics were conducted using the Dsuite package (Malinsky, et al., 2021). TreeMix diagram for different B. rapa populations was conducted using TreeMix v. 1.12 with parameters "-root Rapini -k 500 -m 10 -bootstrap" . Finally, the Newick tree was generated using the PanKmer program (https://gitlab.com/salk-tm/pankmer) with the parameter "--newick --metric".
 
@@ -30,6 +32,8 @@ PCA analysis was performed using the plink software (version: v1.90b6.24, https:
 <img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/population_analysis.png">
 </div>
 
+```
+```
 ## GATKscripts
 First, we employed fastp (version 0.12.3) with the parameters "-z 4 -q 20 -u 30 -n 5" to filter out low-quality reads present in the sequencing data. Next, we aligned the clean reads from 1,812 samples separately to the reference genomes CFv4, Z1v2, ECD04, A03, PCE, LongYou, and OIB, generating gvcf files based on the clara-parabricks pipeline (version: 4.2.0-1, default parameters) (https://www.nvidia.com/en-us/clara/genomics/). Subsequently, we merged the gvcf files using the GenomicsDBImport module of the GATK software (version gatk-4.1.3.0, https://gatk.broadinstitute.org/hc/en-us) and then utilized the GenotypeGVCFs module within the GATK pipeline to generate vcf files. Furthermore, we extracted SNPs and InDels using the SelectVariants module of GATK. The final SNP and indel files were filtered for high quality and polymorphic SNPs and InDels across the 1,812 different B. rapa genomes using vcftools software (Danecek, et al., 2011) (version: 0.1.16; parameters: --maxDP 500, --minGQ 10, --minQ 30, --min-meanDP 3, --min-alleles 2, --max-alleles 2, --maf 0.05). 
 
