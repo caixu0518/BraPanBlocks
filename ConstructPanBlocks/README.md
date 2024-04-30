@@ -5,13 +5,13 @@ The Pan-Blocks constructed in the current study are based on 21 published B. rap
 ### _run_nucmers.pl_
 The script run_nucmers.pl is used to compare any two genomes and obtain one-to-one alignments.
 
-### calculate_shared_haps.v1.pl
+### _calculate_shared_haps.v1.pl_
 The script calculate_shared_haps.v1.pl is used to obtain the coordinates of _B. rapa_ Pan-Blocks.
 
-### 03.plot_multi_syn.v1.1.pl
+### _03.plot_multi_syn.v1.1.pl_
 The script 03.plot_multi_syn.v1.1.pl uses the SVG module in Perl to generate plots of Pan-Blocks and their one-to-one alignments between different genomes. The results can be visualized as shown in the following example.
 
-#### example: Display of Pan-Blocks on chromosome A03
+#### _example: Display of Pan-Blocks on chromosome A03_
 <div align=center>
 <img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/A03_Pan-Blocks.gif">
 </div>
