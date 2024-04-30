@@ -12,7 +12,7 @@ The script generate_allele_frequency_and_Pi_v1.1.pl performs a _Fisher's exact t
 
 ### CalculateDomesticatedSignalsBasedOnPanBlocks_v1.6.pl
 The script CalculateDomesticatedSignalsBasedOnPanBlocks_v1.6.pl calls generate_allele_frequency_and_Pi_v1.1.pl and generate_allele_frequency_and_Pi_v1.1.pl, integrating these two steps into an automated workflow. It also utilizes the Perl threads module to enable parallel computation for efficient processing. 
-The resulting files generated from this step are Merged.group.lst.RefAllele.adjustPvalue.txt[https://github.com/caixu0518/BraPanBlocks/blob/main/DomesticationSignals/Data/Merged.group.lst.RefAllele.adjustPvalue.txt] and Merged.group.lst.MissAllele.adjustPvalue.txt[https://github.com/caixu0518/BraPanBlocks/blob/main/DomesticationSignals/Data/Merged.group.lst.MissAllele.adjustPvalue.txt].
+The resulting files generated from this step are [Merged.group.lst.RefAllele.adjustPvalue.txt](https://github.com/caixu0518/BraPanBlocks/blob/main/DomesticationSignals/Data/Merged.group.lst.RefAllele.adjustPvalue.txt) and [Merged.group.lst.MissAllele.adjustPvalue.txt](https://github.com/caixu0518/BraPanBlocks/blob/main/DomesticationSignals/Data/Merged.group.lst.MissAllele.adjustPvalue.txt).
 
 ### extract_candiate_genes_v1.3_3xigama.pl
 The script extract_candidate_genes_v1.3_3xigama.pl extracts candidate genes present in the selection signals and adds potential functional descriptions to these candidate genes using a provided list of syntenic genes with _Arabidopsis_.
