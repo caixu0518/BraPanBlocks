@@ -59,3 +59,8 @@ rm -rf  /home/caix/OIB/${readId}.bam    /home/caix/OIB/${readId}.bam.bai  /home/
 echo $(date)
 echo "Finished: ${readId} ... "
 ```
+
+#### example: 1812 different _B. rapa_ assemblies were used along with 7 reference genomes to construct multiple reference variation maps.
+<div align=center>
+<img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/Figure-1.gif">
+</div>
