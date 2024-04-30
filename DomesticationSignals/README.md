@@ -8,7 +8,7 @@ We used the script generate_interval_vcfs.pl to segment VCF files based on the c
 The script generate_allele_frequency_and_Pi_v1.1.pl is used to calculate the frequency of the reference allele and missing allele at each SNP site within each VCF file, as well as the original π (Pi) value.
 
 ### generate_allele_frequency_and_Pi_v1.1.pl
-The script generate_allele_frequency_and_Pi_v1.1.pl performs a Fisher's exact test and adjusts the p-values using the Benjamini-Hochberg method. If the condition (mean of dominant allele frequency - 3 * standard deviation of dominant allele frequency) > (mean of recessive allele frequency + 3 * standard deviation of recessive allele frequency) is met and the adjusted p-value <sub>(Padjusted)</sub> is less than 1e-5, then the window is further considered as a putative selective signal.
+The script generate_allele_frequency_and_Pi_v1.1.pl performs a _Fisher's exact test_ and adjusts the p-values using the Benjamini-Hochberg method. If the condition (mean of dominant allele frequency - 3 * standard deviation of dominant allele frequency) > (mean of recessive allele frequency + 3 * standard deviation of recessive allele frequency) is met and the adjusted p-value <sub>(Padjusted)</sub> is less than 1e-5, then the window is further considered as a putative selective signal.
 
 ### CalculateDomesticatedSignalsBasedOnPanBlocks_v1.6.pl
 The script CalculateDomesticatedSignalsBasedOnPanBlocks_v1.6.pl calls generate_allele_frequency_and_Pi_v1.1.pl and generate_allele_frequency_and_Pi_v1.1.pl, integrating these two steps into an automated workflow. It also utilizes the Perl threads module to enable parallel computation for efficient processing.
