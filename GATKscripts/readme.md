@@ -60,7 +60,7 @@ echo $(date)
 echo "Finished: ${readId} ... "
 ```
 
-#### example: 1812 different _B. rapa_ assemblies were used along with 7 reference genomes to construct multiple reference variation maps.
+#### _example: 1812 different _B. rapa_ assemblies were used along with 7 reference genomes to construct multiple reference variation maps_
 <div align=center>
 <img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/Figure-1.gif">
 </div>
