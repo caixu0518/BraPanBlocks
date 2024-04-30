@@ -20,3 +20,8 @@ The resulting files generated from this step are [Merged.group.lst.RefAllele.adj
 
 ### extract_candiate_genes_v1.3_3xigama.pl
 The script extract_candidate_genes_v1.3_3xigama.pl extracts candidate genes present in the selection signals and adds potential functional descriptions to these candidate genes using a provided list of syntenic genes with _Arabidopsis_. The resulting file generated from this step is [merged.outliers.signals.txt](https://github.com/caixu0518/BraPanBlocks/blob/main/DomesticationSignals/Data/merged.outliers.signals.txt).
+
+#### example: Domestication Signals in Southern and Northern East Asian B. rapa Populations Using Pan-Blocks.
+<div align=center>
+<img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/signal_example.gif">
+</div>
