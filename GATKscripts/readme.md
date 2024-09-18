@@ -64,3 +64,8 @@ echo "Finished: ${readId} ... "
 <div align=center>
 <img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/Figure-1.gif">
 </div>
+
+###  script Calculate the similarity between all materials and a given material within a specified interval..
+```
+perl  calculate_SNPsim.pl  Bra.Agenome.sam.snp.addsnpname.maf005.vcf.gz  ordered.samples.txt  BRO
+```
