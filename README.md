@@ -13,17 +13,6 @@ The Pan-Blocks constructed in the current study are based on 21 published _B. ra
 
 ```
 ```
-## DomesticationSignals
-After obtaining population variations using seven different _B. rapa_ genomes as reference genomes, we further integrated the Pan-Blocks and genetic variation maps constructed with these reference genomes to identify potential selection signals. The steps were conducted as follows: Initially, we partitioned each Pan-Block into 10 kb bins and computed the enrichment levels of reference alleles and missing alleles within both the derived and control groups. A bin was designated as a potential selected region if all SNPs within the bin showed significant enrichment of both alleles in either the derived or control populations. Specifically, we assessed the frequencies of both alleles in these populations and discarded sites where both dominant and recessive allele frequencies were either greater than 0.9 or less than 0.1. Subsequently, we determined the mean (μ<sub>dominant</sub>, μ<sub>recessive</sub>) and standard deviation (σ<sub>dominant</sub>, σ<sub>recessive</sub>) of allele frequencies for each window in these populations. Following this, we performed _Fisher's exact test_ and adjusted the p-values using the Benjamini-Hochberg method. If (μ<sub>dominant</sub>-3σ<sub>dominant</sub>) > (μ<sub>recessive</sub>+3σ<sub>recessive</sub>) and Padjusted < 1e-5, the window was further considered as a putative selective signal.
-
-
-#### _example: Domestication Signals in Southern and Northern East Asian B. rapa Populations Using Pan-Blocks_
-<div align=center>
-<img src="https://github.com/caixu0518/BraPanBlocks/blob/main/pngs/signal_example.gif">
-</div>
-
-```
-```
 ## PopulationStructureAnalysis
 PCA analysis was performed using the plink software (version: v1.90b6.24, https://www.cog-genomics.org/plink2/) with the parameters "plink --noweb --bfile --pca 20 --allow-extra-chr". Fst and nucleotide diversity were calculated using pixy (version: 1.2.7.beta1), with a window size set to 200 kb, step size set to 5 kb, and parameters "pixy --stats pi fst dxy --vcf --populations --bed_file --n_cores 40 --bypass_invariant_check yes". Population structure analysis was conducted using the fastStructure algorithm. F4-ratio statistics were conducted using the Dsuite package (Malinsky, et al., 2021). The Newick tree was generated using the PanKmer program (https://gitlab.com/salk-tm/pankmer) with the parameter "--newick --metric".
 
